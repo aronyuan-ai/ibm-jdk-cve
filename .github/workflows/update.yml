@@ -2,7 +2,7 @@ name: Update IBM JDK CVE page
 
 on:
   schedule:
-    - cron: "0 6 * * *"      # 每天 UTC 06:00（台灣時間下午 2 點）自動更新
+    - cron: "0 6 */2 * *"      # 每2天 UTC 06:00（台灣時間下午 2 點）自動更新
   workflow_dispatch:          # 也可在 Actions 頁面手動觸發
 
 permissions:
